@@ -1,0 +1,142 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+\decimalpoint
+\usepackage{natbib}
+\usepackage{cite}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{titlesec}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{titling}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\rfoot{\thepage \hspace{1pt} de \pageref{LastPage}}
+
+% Estos son ajustes del documento, no es necesario que los edites
+% Ajustes para que \maketitle acepte un nuevo item
+\pretitle{\begin{center}\placetitlepicture\large \par Facultad de Ciencias \par }
+    \posttitle{\par\end{center}}
+    
+% Comando para incluir el logo de la universidad en la portada
+\newcommand{\titlepicture}[2][t]{%
+    \renewcommand\placetitlepicture{%
+    \includegraphics[#1]{#2}\par\medskip
+    }%
+}
+\newcommand{\placetitlepicture}{} % initialization
+\titleformat{\section}
+  {\normalfont\LARGE\bfseries \color{MidnightBlue}}{\thesection}{1em}{}[{\titlerule[0.8pt]}] 
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% EDITABLES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% LOGO DE LA UNIVERSIDAD
+\titlepicture[scale=1]{media/Positivo monocromático vertical 1 línea.png}
+% Título
+\title{\color{MidnightBlue} \Huge \textbf{Protocolo de Tesis}}
+% Subtítulo
+\subtitle{\color{MidnightBlue} Título de la tesis}
+% Autores
+%Quien presenta la tesis
+\author{\normalsize{\textbf{Presenta:} Luis Gerardo Ramriez Archundia}\\
+\texttt{\normalsize{Facultad de Ciencias}}\\
+\texttt{\normalsize{Universidad Autónoma del Estado de México}}
+\and % Asesor 1
+\normalsize{\textbf{Asesor externo:} Nombre}\\
+\texttt{\normalsize{Mesoamerican Centre for Theoretical Physics}}\\
+\texttt{\normalsize{Universidad Autónoma de Chiapas}}
+\and % Asesor 2
+\normalsize{\textbf{Asesor interno:}Nombre}\\
+\texttt{\normalsize{Facultad de Ciencias}}\\
+\texttt{\normalsize{Universidad Autónoma del Estado de México}}
+}
+\date{\small \today} %Fecha, se pone en automático, no es necesario editar
+%%%%%%% INICIO DEL DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+    \maketitle
+    \begin{abstract} %Abstract o resumen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \begin{itshape}
+            In sit amet lectus faucibus, accumsan dui sit amet, vehicula orci. Aenean nec tellus commodo, vehicula magna eget, pharetra libero. Etiam consectetur lacus ac elit malesuada, sit amet hendrerit velit interdum. Sed volutpat luctus quam, eget scelerisque neque pretium nec. Aenean auctor lectus ac efficitur egestas. 
+        \end{itshape}
+    \end{abstract}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+    \newpage %salto de página
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+    \section{Antecedentes} % Antecedentes
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus luctus ultricies. In lobortis urna ac scelerisque ornare. Phasellus ut tortor viverra, porttitor nibh non, mollis eros. Etiam vitae enim et sem blandit porttitor in tincidunt lectus. Etiam ac tincidunt turpis, id vulputate libero. Donec nec ligula dignissim, facilisis lectus eu, mollis enim. Donec sed lorem a purus bibendum consequat vitae sed sapien. Donec in venenatis libero \citep{YUKAWA1935} \citep{Richard2012}. \\
+         
+         \noindent{Sed quis volutpat justo, a gravida tellus. Nulla nec maximus massa. Quisque in leo ac justo tincidunt semper. Donec lacinia sem laoreet odio viverra pharetra. Nullam pharetra non nisl eget lacinia. Nulla aliquam nulla orci, sit amet rhoncus nunc faucibus pulvinar. Cras lobortis mi id libero porttitor, interdum malesuada leo iaculis. Integer tellus nisi, faucibus eget arcu in, varius interdum ligula. Pellentesque fringilla odio nec vehicula sodales  \citep{Ananthanarayan2022}.} \\
+
+         \noindent{In sit amet lectus faucibus, accumsan dui sit amet, vehicula orci. Aenean nec tellus commodo, vehicula magna eget, pharetra libero. Etiam consectetur lacus ac elit malesuada, sit amet hendrerit velit interdum. Sed volutpat luctus quam, eget scelerisque neque pretium nec. Aenean auctor lectus ac efficitur egestas. Cras commodo sagittis tortor, lacinia tincidunt nibh elementum sed. Vestibulum sodales massa in sapien luctus fermentum. Nam dapibus ac nisl sed tristique. Nulla non est urna. Maecenas semper fringilla lorem, eget scelerisque lorem congue non. \citep{Arrington:2021alx}.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \section{Objetivo}
+        In sit amet lectus faucibus, accumsan dui sit amet, vehicula orci. Aenean nec tellus commodo, vehicula magna eget, pharetra libero. Etiam consectetur lacus ac elit malesuada, sit amet hendrerit velit interdum. Sed volutpat luctus quam, eget scelerisque neque pretium nec. Aenean auctor lectus ac efficitur egestas. Cras commodo sagittis tortor, lacinia tincidunt nibh elementum sed. Vestibulum sodales massa in sapien luctus fermentum. Nam dapibus ac nisl sed tristique. Nulla non est urna. Maecenas semper fringilla lorem, eget scelerisque lorem congue non. 
+    \section{Metodología}
+        \begin{enumerate}
+            \item ¿Como lo voy a hacer?
+            \item De esta manera
+            \item Y de esta otra
+        \end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%        
+    \newpage
+    \section{Hipótesis}
+         In sit amet lectus faucibus, accumsan dui sit amet, vehicula orci. Aenean nec tellus commodo, vehicula magna eget, pharetra libero. Etiam consectetur lacus ac elit malesuada, sit amet hendrerit velit interdum. Sed volutpat luctus quam, eget scelerisque neque pretium nec. Aenean auctor lectus ac efficitur egestas. Cras commodo sagittis tortor, lacinia tincidunt nibh elementum sed. Vestibulum sodales massa in sapien luctus fermentum. Nam dapibus ac nisl sed tristique. Nulla non est urna. Maecenas semper fringilla lorem, eget scelerisque lorem congue non. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
+        \section{Cronograma de actividades}
+        \begin{table}[h!] % El comando h! es muy importante, pone la tabla donde la deseas
+                \begin{tabular}{l|m{5in}}
+                    \hline
+                    Mes &
+                    Actividad \\ \hline
+                    Mes 1 &
+                    Estudiar Teoría Cuántica de Campos, propagadores, lagrangianos y ecuaciones de movimiento de las partículas fundamentales. Repaso general de las ecuaciones de Maxwell, Klein-Gordon y Dirac. \\ \hline
+                    Mes 2 & 
+                    Introducción a las ecuaciones de Schwinger-Dyson. Encontrar la ecuación GAP de la Cromodinámica Cuántica (QCD).  \\ \hline
+                    Mes 3 &
+                    Estudiar el modelo del Quark para predecir masas de mesones y bariones.\\\hline
+                    Mes 4 &
+                    Aplicar las reglas de Feynman de QCD a procesos de dispersión. Establecer los parámetros que serán usados para el cálculo. \\ \hline
+                    Mes 5 &
+                    Calcular el factor de forma del pion usando un modelo de interacción de contacto, definir las condiciones y el truncamiento. Utilizar una librería de Mathematica para calcular trazas. \\ \hline
+                    Mes 6 &
+                    Interpretar y presentar los resultados finales de la investigación con la elaboración de una tesis. \\ \hline
+            \end{tabular}
+        \end{table}
+    \newpage    
+    \bibliography{mybib}
+    \bibliographystyle{unsrt}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% ESPACIO PARA LAS FIRMAS %%%%%%%%%%%%%%%%
+\vspace{40mm}
+\begin{table}[h!]
+    \begin{tabular}{clc}
+    \hrulefill           & \multicolumn{1}{c}{} &                      \\
+    \scriptsize{\textbf{Luis Gerardo Ramirez Archundia}}        & \multicolumn{1}{c}{} &                                                     \\
+    \scriptsize{Pasante} & \multicolumn{1}{c}{} &                      \\
+    \multicolumn{1}{l}{} &                      & \multicolumn{1}{l}{} \\
+    \multicolumn{1}{l}{} &                      & \multicolumn{1}{l}{} \\
+    \multicolumn{1}{l}{} &                      & \multicolumn{1}{l}{} \\
+    \multicolumn{1}{l}{} &                      & \multicolumn{1}{l}{} \\
+    \hrulefill           &                      & \hrulefill           \\
+    \scriptsize{\textbf{Nombre}} &                      & \scriptsize{\textbf{Nombre}} \\
+    \scriptsize{Asesor externo}                                 &                      & \scriptsize{Asesor interno}                        
+    \end{tabular}
+    \end{table}
+\end{document}
